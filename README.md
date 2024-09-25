@@ -1,6 +1,8 @@
 # GameTracker
 Tracks your gameplay play time
 
+![Screenshot_1](https://img.itch.zone/aW1hZ2UvMjk5MDIzNS8xNzkyMjE0Ny5wbmc=/original/IJGSHO.png)
+
 # Notice
 The app is left running in background if you quit the main form, to quit the app you need to close it in the 'System Tray'.
 You can't run multiple instances of the app.
