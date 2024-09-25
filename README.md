@@ -1,5 +1,5 @@
 # GameTracker
-Tracks your gameplay play time
+Tracks your gameplay play time.
 
 <img src="https://img.itch.zone/aW1hZ2UvMjk5MDIzNS8xNzkyMjE0Ny5wbmc=/original/IJGSHO.png" alt="Screenshot_1" width="500"/>
 
