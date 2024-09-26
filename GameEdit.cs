@@ -20,6 +20,7 @@ namespace GameTracker
 
         public GameEdit(VideoGame game)
         {
+            Font = new Font(Font.Name, 8.25f * 125f / CreateGraphics().DpiX, Font.Style, Font.Unit, Font.GdiCharSet, Font.GdiVerticalFont);
             InitializeComponent();
 
             this.game = game;
@@ -53,6 +54,11 @@ namespace GameTracker
         private void Cancel_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
+        }
+
+        private void GameEdit_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -18,13 +18,15 @@ namespace GameTracker
         //Played games list
         public List<VideoGame> playedGames = new List<VideoGame>();
 
-        public string version = "v0.1.8";
+        public string version = "v0.1.9";
 
         int i = 0;
 
         public Form1()
         {
+            Font = new Font(Font.Name, 8.25f * 125f / CreateGraphics().DpiX, Font.Style, Font.Unit, Font.GdiCharSet, Font.GdiVerticalFont);
             InitializeComponent();
+
             this.DoubleBuffered = true;
             flowLayoutPanel1.AutoScroll = true;
 

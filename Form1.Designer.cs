@@ -70,11 +70,11 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.FromArgb(224, 224, 224);
-            button1.Location = new Point(729, 0);
+            button1.Location = new Point(834, 0);
             button1.Margin = new Padding(0);
             button1.Name = "button1";
-            button1.Padding = new Padding(0, 0, 0, 3);
-            button1.Size = new Size(147, 51);
+            button1.Padding = new Padding(0, 0, 0, 2);
+            button1.Size = new Size(118, 41);
             button1.TabIndex = 2;
             button1.Text = "Add Game";
             button1.UseVisualStyleBackColor = false;
@@ -106,7 +106,7 @@
             contextMenuStrip1.Margin = new Padding(0, 4, 0, 4);
             contextMenuStrip1.Name = "contextMenuStrip1";
             contextMenuStrip1.RenderMode = ToolStripRenderMode.System;
-            contextMenuStrip1.Size = new Size(108, 30);
+            contextMenuStrip1.Size = new Size(101, 28);
             contextMenuStrip1.TabStop = true;
             // 
             // quitToolStripMenuItem
@@ -119,7 +119,7 @@
             quitToolStripMenuItem.ImageTransparentColor = Color.Black;
             quitToolStripMenuItem.Name = "quitToolStripMenuItem";
             quitToolStripMenuItem.Padding = new Padding(0, 2, 0, 2);
-            quitToolStripMenuItem.Size = new Size(107, 26);
+            quitToolStripMenuItem.Size = new Size(100, 24);
             quitToolStripMenuItem.Text = "Quit";
             quitToolStripMenuItem.TextDirection = ToolStripTextDirection.Horizontal;
             quitToolStripMenuItem.Click += quitToolStripMenuItem_Click;
@@ -130,18 +130,19 @@
             panel1.Controls.Add(button1);
             panel1.Controls.Add(panel3);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 477);
-            panel1.Margin = new Padding(3, 0, 3, 3);
+            panel1.Location = new Point(0, 490);
+            panel1.Margin = new Padding(2, 0, 2, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(876, 51);
+            panel1.Size = new Size(952, 41);
             panel1.TabIndex = 12;
             panel1.Paint += panel1_Paint_1;
             // 
             // panel3
             // 
-            panel3.Location = new Point(0, -482);
+            panel3.Location = new Point(0, -386);
+            panel3.Margin = new Padding(2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(882, 485);
+            panel3.Size = new Size(706, 388);
             panel3.TabIndex = 3;
             // 
             // flowLayoutPanel1
@@ -152,9 +153,9 @@
             flowLayoutPanel1.Controls.Add(panel2);
             flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.Location = new Point(0, 0);
-            flowLayoutPanel1.Margin = new Padding(0, 0, 0, 8);
+            flowLayoutPanel1.Margin = new Padding(0, 0, 0, 6);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(876, 477);
+            flowLayoutPanel1.Size = new Size(952, 490);
             flowLayoutPanel1.TabIndex = 11;
             flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             flowLayoutPanel1.Resize += flowLayoutPanel1_Resize;
@@ -172,16 +173,16 @@
             panel2.Location = new Point(2, 2);
             panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(209, 401);
+            panel2.Size = new Size(167, 321);
             panel2.TabIndex = 9;
             // 
             // label3
             // 
             label3.ForeColor = Color.FromArgb(224, 224, 224);
-            label3.Location = new Point(20, 371);
+            label3.Location = new Point(16, 297);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(162, 20);
+            label3.Size = new Size(130, 16);
             label3.TabIndex = 11;
             label3.Text = "(status message)";
             label3.TextAlign = ContentAlignment.MiddleCenter;
@@ -192,10 +193,10 @@
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
             button4.ForeColor = Color.White;
-            button4.Location = new Point(20, 329);
+            button4.Location = new Point(16, 263);
             button4.Margin = new Padding(2);
             button4.Name = "button4";
-            button4.Size = new Size(94, 29);
+            button4.Size = new Size(75, 23);
             button4.TabIndex = 10;
             button4.Text = "Remove";
             button4.UseVisualStyleBackColor = false;
@@ -204,10 +205,10 @@
             // label4
             // 
             label4.ForeColor = Color.FromArgb(224, 224, 224);
-            label4.Location = new Point(20, 12);
+            label4.Location = new Point(16, 10);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(162, 20);
+            label4.Size = new Size(130, 16);
             label4.TabIndex = 9;
             label4.Text = "[NONE]";
             label4.TextAlign = ContentAlignment.MiddleCenter;
@@ -215,10 +216,10 @@
             // pictureBox3
             // 
             pictureBox3.BackColor = Color.FromArgb(68, 69, 96);
-            pictureBox3.Location = new Point(20, 42);
+            pictureBox3.Location = new Point(16, 34);
             pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(162, 168);
+            pictureBox3.Size = new Size(130, 134);
             pictureBox3.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox3.TabIndex = 4;
             pictureBox3.TabStop = false;
@@ -227,10 +228,10 @@
             // label5
             // 
             label5.ForeColor = Color.FromArgb(224, 224, 224);
-            label5.Location = new Point(20, 258);
+            label5.Location = new Point(16, 206);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(162, 20);
+            label5.Size = new Size(130, 16);
             label5.TabIndex = 5;
             label5.Text = "0h 0m";
             label5.TextAlign = ContentAlignment.MiddleLeft;
@@ -241,10 +242,10 @@
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
             button5.ForeColor = Color.White;
-            button5.Location = new Point(20, 294);
+            button5.Location = new Point(16, 235);
             button5.Margin = new Padding(2);
             button5.Name = "button5";
-            button5.Size = new Size(94, 29);
+            button5.Size = new Size(75, 23);
             button5.TabIndex = 6;
             button5.Text = "Edit";
             button5.UseVisualStyleBackColor = false;
@@ -254,26 +255,26 @@
             // 
             label6.AutoSize = true;
             label6.ForeColor = Color.White;
-            label6.Location = new Point(20, 225);
+            label6.Location = new Point(16, 180);
             label6.Margin = new Padding(0);
             label6.Name = "label6";
-            label6.Size = new Size(78, 20);
+            label6.Size = new Size(63, 15);
             label6.TabIndex = 0;
             label6.Text = "PLAY TIME";
             label6.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(120F, 120F);
+            AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(24, 32, 46);
-            ClientSize = new Size(876, 528);
+            ClientSize = new Size(952, 531);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panel1);
             DoubleBuffered = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(2);
-            MinimumSize = new Size(800, 500);
+            MinimumSize = new Size(643, 408);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Game Tracker";

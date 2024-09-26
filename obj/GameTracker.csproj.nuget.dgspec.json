@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rmilo\\source\\repos\\GameTracker\\GameTracker\\GameTracker.csproj": {}
+    "C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\GameTracker\\GameTracker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rmilo\\source\\repos\\GameTracker\\GameTracker\\GameTracker.csproj": {
+    "C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\GameTracker\\GameTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rmilo\\source\\repos\\GameTracker\\GameTracker\\GameTracker.csproj",
+        "projectUniqueName": "C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\GameTracker\\GameTracker.csproj",
         "projectName": "GameTracker",
-        "projectPath": "C:\\Users\\rmilo\\source\\repos\\GameTracker\\GameTracker\\GameTracker.csproj",
+        "projectPath": "C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\GameTracker\\GameTracker.csproj",
         "packagesPath": "C:\\Users\\rmilo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rmilo\\source\\repos\\GameTracker\\GameTracker\\obj\\",
+        "outputPath": "C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\GameTracker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rmilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
