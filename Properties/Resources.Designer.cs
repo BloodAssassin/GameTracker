@@ -69,5 +69,25 @@ namespace GameTracker.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OrderArrow_Default {
+            get {
+                object obj = ResourceManager.GetObject("OrderArrow_Default", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OrderArrow_Selected {
+            get {
+                object obj = ResourceManager.GetObject("OrderArrow_Selected", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

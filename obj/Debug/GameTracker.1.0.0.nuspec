@@ -5,7 +5,7 @@
     <version>1.0.0</version>
     <authors>GameTracker</authors>
     <description>Package Description</description>
-    <repository type="git" />
+    <repository type="git" commit="ae86d4f3fc77d349272cc2648479e4f4ba6856fb" />
     <dependencies>
       <group targetFramework="net8.0-windows7.0" />
     </dependencies>
@@ -19,9 +19,9 @@
     </contentFiles>
   </metadata>
   <files>
-    <file src="C:\Users\rmilo\source\repos\GameTracker\GameTracker\bin\Debug\net8.0-windows\GameTracker.runtimeconfig.json" target="lib\net8.0-windows7.0\GameTracker.runtimeconfig.json" />
-    <file src="C:\Users\rmilo\source\repos\GameTracker\GameTracker\bin\Debug\net8.0-windows\GameTracker.dll" target="lib\net8.0-windows7.0\GameTracker.dll" />
-    <file src="C:\Users\rmilo\source\repos\GameTracker\GameTracker\GameCheckerIcon.ico" target="content\GameCheckerIcon.ico" />
-    <file src="C:\Users\rmilo\source\repos\GameTracker\GameTracker\GameCheckerIcon.ico" target="contentFiles\any\net8.0-windows7.0\GameCheckerIcon.ico" />
+    <file src="C:\Users\rmilo\Documents\GitHub\GameTracker\GameTracker\GameTracker\bin\Debug\net8.0-windows\GameTracker.runtimeconfig.json" target="lib\net8.0-windows7.0\GameTracker.runtimeconfig.json" />
+    <file src="C:\Users\rmilo\Documents\GitHub\GameTracker\GameTracker\GameTracker\bin\Debug\net8.0-windows\GameTracker.dll" target="lib\net8.0-windows7.0\GameTracker.dll" />
+    <file src="C:\Users\rmilo\Documents\GitHub\GameTracker\GameTracker\GameTracker\GameCheckerIcon.ico" target="content\GameCheckerIcon.ico" />
+    <file src="C:\Users\rmilo\Documents\GitHub\GameTracker\GameTracker\GameTracker\GameCheckerIcon.ico" target="contentFiles\any\net8.0-windows7.0\GameCheckerIcon.ico" />
   </files>
 </package>

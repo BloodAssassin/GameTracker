@@ -17,16 +17,26 @@ namespace GameTracker
     {
         //Played games list
         public List<VideoGame> playedGames = new List<VideoGame>();
+        public List<VideoGame> showedPlayedGames = new List<VideoGame>();
 
-        public string version = "v0.1.9";
+        public string version = "v0.1.10";
 
         int i = 0;
 
+        //OrderArrow
+        Image orderArrow_default = Resources.OrderArrow_Default;
+        Image orderArrow_selected = Resources.OrderArrow_Selected;
+
+        string sortOrder = "asc";
+
         public Form1()
         {
+            //Font scale
             Font = new Font(Font.Name, 8.25f * 125f / CreateGraphics().DpiX, Font.Style, Font.Unit, Font.GdiCharSet, Font.GdiVerticalFont);
+
             InitializeComponent();
 
+            //FlowLayout scroll
             this.DoubleBuffered = true;
             flowLayoutPanel1.AutoScroll = true;
 
@@ -39,9 +49,14 @@ namespace GameTracker
                 Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\Game Tracker");
             }
 
+            //Assign values to dropDown
+            InitSortDropDown();
+
+            //Load list
             LoadPlayTime();
             RefreshList();
 
+            //Check if program is already running
             CheckAlreadyRunning();
         }
 
@@ -72,8 +87,11 @@ namespace GameTracker
         {
             flowLayoutPanel1.Controls.Clear();
 
+            new List<VideoGame>(playedGames);
+            SortGameList();
+
             int i = 0;
-            foreach (VideoGame game in playedGames)
+            foreach (VideoGame game in showedPlayedGames)
             {
                 PictureBox newGameIcon = new PictureBox();
                 Label newHours = new Label();
@@ -424,7 +442,7 @@ namespace GameTracker
             SavePlayTime();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void AddGameClick(object sender, EventArgs e)
         {
             try
             {
@@ -461,7 +479,7 @@ namespace GameTracker
                     }
                 }
 
-                
+
             }
             catch (Exception ex)
             {
@@ -514,7 +532,21 @@ namespace GameTracker
             SavePlayTime();
 
             //Delete game icon
-            File.Delete(iconDirectory + @"\" + gameToBeRemoved.name + ".png");            
+            File.Delete(iconDirectory + @"\" + gameToBeRemoved.name + ".png");
+        }
+
+        private void InitSortDropDown()
+        {
+            string[] sorts = { "Added", "Playtime", "Alphabetical" };
+
+            sortDropDown.DataSource = sorts;
+            sortDropDown.SelectedIndex = 0;
+        }
+
+        private void ScrollBarMinimizeFix()
+        {
+            flowLayoutPanel1.AutoScroll = false;
+            flowLayoutPanel1.AutoScroll = true;
         }
 
         private void gameIcon_Click(object sender, EventArgs e)
@@ -541,6 +573,92 @@ namespace GameTracker
             }
         }
 
+        //Sort game list
+        private void SortGameList()
+        {
+            //By added order
+            if (sortDropDown.SelectedIndex == 0)
+            {
+                if (sortOrder == "asc")
+                {
+                    showedPlayedGames.Clear();
+                    showedPlayedGames = new List<VideoGame>(playedGames);
+                }
+                else if (sortOrder == "desc")
+                {
+                    showedPlayedGames = new List<VideoGame>(playedGames);
+                    showedPlayedGames.Reverse();
+                }
+            }
+            //By play time
+            else if (sortDropDown.SelectedIndex == 1)
+            {
+                if (sortOrder == "asc")
+                {
+                    showedPlayedGames = playedGames.OrderBy(x => x.playTime).ToList();
+                }
+                else if (sortOrder == "desc")
+                {
+                    showedPlayedGames = playedGames.OrderByDescending(x => x.playTime).ToList();
+                }
+            }
+            //By alphabet
+            else if (sortDropDown.SelectedIndex == 2)
+            {
+                if (sortOrder == "asc")
+                {
+                    showedPlayedGames = playedGames.OrderBy(x => x.nickName).ToList();
+                }
+                else if (sortOrder == "desc")
+                {
+                    showedPlayedGames = playedGames.OrderByDescending(x => x.nickName).ToList();
+                }
+            }
+        }
+
+        //Order arrow click
+        private void OrderArrow_Click(object sender, EventArgs e)
+        {
+            orderArrow_selected.RotateFlip(RotateFlipType.RotateNoneFlipY);
+            orderArrow_default.RotateFlip(RotateFlipType.RotateNoneFlipY);
+
+            OrderArrow.Image = orderArrow_selected;
+
+            if (sortOrder == "asc")
+            {
+                sortOrder = "desc";
+            }
+            else if (sortOrder == "desc")
+            {
+                sortOrder = "asc";
+            }
+
+            RefreshList();
+        }
+
+        //Order arrow hover
+        private void OrderArrow_MouseEnter(object sender, EventArgs e)
+        {
+            OrderArrow.Image = orderArrow_selected;
+        }
+
+        //Order arrow leave
+        private void OrderArrow_MouseLeave(object sender, EventArgs e)
+        {
+            OrderArrow.Image = orderArrow_default;
+        }
+
+        private void sortDropDown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RefreshList();
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            //Scrollbar fix applied
+            ScrollBarMinimizeFix();
+        }
+
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
@@ -552,16 +670,6 @@ namespace GameTracker
         }
 
         private void flowLayoutPanel1_Resize(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Resize(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
