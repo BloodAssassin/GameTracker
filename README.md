@@ -14,7 +14,8 @@ The game will remain tracked even if you change the location of the .exe, though
 All of the saved files are located here: C:\Users<USER>\Documents\Game Tracker
 
 # Requriements
-Runs only on Windows.
+- Windows 10/11
+- .NET 8.0
 
 # Download Build 
 Itch.io: [https://bloodassassin89.itch.io/game-tracker](https://bloodassassin89.itch.io/game-tracker)
