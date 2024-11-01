@@ -14,6 +14,9 @@ The game will remain tracked even if you change the location of the .exe, though
 # Save Location
 All of the saved files are located here: C:\Users<USER>\Documents\Game Tracker
 
+# Updates
+v0.1.2 - Sorting options are now saved
+
 # Requriements
 - Windows 10/11
 - .NET 8.0
