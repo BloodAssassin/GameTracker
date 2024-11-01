@@ -11,7 +11,7 @@ You need to select an .exe of a game you want to track.<br>
 The game will remain tracked even if you change the location of the .exe, though "(path changed)" status message will appear below the game.
 
 # Save Location
-All of the saved files are located here: C:\Users<USER>\Documents\Game Tracker
+Save files are located here: C:\Users<USER>\Documents\Game Tracker
 
 # Updates
 v0.1.2 - Sorting options are now saved
