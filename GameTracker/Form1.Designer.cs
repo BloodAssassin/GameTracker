@@ -44,20 +44,20 @@
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel2 = new Panel();
             label3 = new Label();
+            gamepad = new PictureBox();
             button4 = new Button();
             label4 = new Label();
             pictureBox3 = new PictureBox();
             label5 = new Label();
             button5 = new Button();
             label6 = new Label();
-            gamepad = new PictureBox();
             contextMenuStrip1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)OrderArrow).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)gamepad).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // timer1
@@ -170,6 +170,7 @@
             sortDropDown.FormattingEnabled = true;
             sortDropDown.Location = new Point(77, 15);
             sortDropDown.Name = "sortDropDown";
+            sortDropDown.RightToLeft = RightToLeft.No;
             sortDropDown.Size = new Size(134, 28);
             sortDropDown.TabIndex = 5;
             sortDropDown.SelectedIndexChanged += sortDropDown_SelectedIndexChanged;
@@ -234,6 +235,17 @@
             label3.TabIndex = 11;
             label3.Text = "(status message)";
             label3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // gamepad
+            // 
+            gamepad.Image = Properties.Resources.gamepad;
+            gamepad.Location = new Point(19, 255);
+            gamepad.Name = "gamepad";
+            gamepad.Size = new Size(32, 25);
+            gamepad.SizeMode = PictureBoxSizeMode.Zoom;
+            gamepad.TabIndex = 10;
+            gamepad.TabStop = false;
+            gamepad.Click += pictureBox1_Click;
             // 
             // button4
             // 
@@ -311,17 +323,6 @@
             label6.Text = "PLAY TIME";
             label6.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // gamepad
-            // 
-            gamepad.Image = Properties.Resources.gamepad;
-            gamepad.Location = new Point(19, 255);
-            gamepad.Name = "gamepad";
-            gamepad.Size = new Size(32, 25);
-            gamepad.SizeMode = PictureBoxSizeMode.Zoom;
-            gamepad.TabIndex = 10;
-            gamepad.TabStop = false;
-            gamepad.Click += pictureBox1_Click;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(120F, 120F);
@@ -346,8 +347,8 @@
             flowLayoutPanel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)gamepad).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 

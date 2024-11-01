@@ -19,21 +19,22 @@ namespace GameTracker
         public List<VideoGame> playedGames = new List<VideoGame>();
         public List<VideoGame> showedPlayedGames = new List<VideoGame>();
 
-        public string version = "v0.1.11";
+        public string version = "v0.1.2";
 
-        int i = 0;
+        bool isloading = true;
 
         //OrderArrow
         Image orderArrow_default = Resources.OrderArrow_Default;
         Image orderArrow_selected = Resources.OrderArrow_Selected;
 
+        //Sorting
+        int sortIndex = 0;
         string sortOrder = "asc";
 
         public Form1()
         {
             //Font scale
             Font = new Font(Font.Name, 8.25f * 125f / CreateGraphics().DpiX, Font.Style, Font.Unit, Font.GdiCharSet, Font.GdiVerticalFont);
-
             InitializeComponent();
 
             //FlowLayout scroll
@@ -50,6 +51,7 @@ namespace GameTracker
             }
 
             //Assign values to dropDown
+            LoadSorting();
             InitSortDropDown();
 
             //Load list
@@ -58,6 +60,8 @@ namespace GameTracker
 
             //Check if program is already running
             CheckAlreadyRunning();
+
+            isloading = false;
         }
 
         //Close if already running
@@ -473,6 +477,7 @@ namespace GameTracker
         {
             try
             {
+                int i = 0;
                 OpenFileDialog dialog = new OpenFileDialog();
                 {
                     dialog.Title = "Game Select";
@@ -566,8 +571,48 @@ namespace GameTracker
         {
             string[] sorts = { "Added", "Playtime", "Alphabetical" };
 
+            //Default is set to 'asc' if it's 'desc' than flip the arrow
+            if (sortOrder == "desc")
+            {
+                orderArrow_selected.RotateFlip(RotateFlipType.RotateNoneFlipY);
+                orderArrow_default.RotateFlip(RotateFlipType.RotateNoneFlipY);
+
+                OrderArrow.Image = orderArrow_default;
+            }
+
             sortDropDown.DataSource = sorts;
-            sortDropDown.SelectedIndex = 0;
+            sortDropDown.SelectedIndex = sortIndex;
+        }
+
+        private void SaveSorting()
+        {
+            //Save to file
+            sortIndex = sortDropDown.SelectedIndex;
+
+            StreamWriter writer = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) +
+                    @"\Game Tracker\Sorting.txt");
+
+            writer.Write(sortIndex + " " + sortOrder);
+
+            writer.Close();
+        }
+
+        private void LoadSorting()
+        {
+            //Load from file
+            if (File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) +
+                    @"\Game Tracker\Sorting.txt"))
+            {
+                string line;
+                StreamReader reader = new StreamReader(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) +
+                    @"\Game Tracker\Sorting.txt");
+
+                line = reader.ReadLine();
+                sortIndex = Convert.ToInt32(line.Split()[0]);
+                sortOrder = line.Split()[1];
+
+                reader.Close();
+            }
         }
 
         private void ScrollBarMinimizeFix()
@@ -660,6 +705,7 @@ namespace GameTracker
                 sortOrder = "asc";
             }
 
+            SaveSorting();
             RefreshList();
         }
 
@@ -677,7 +723,11 @@ namespace GameTracker
 
         private void sortDropDown_SelectedIndexChanged(object sender, EventArgs e)
         {
-            RefreshList();
+            if (isloading == false)
+            {
+                SaveSorting();
+                RefreshList();
+            }
         }
 
         private void Form1_Resize(object sender, EventArgs e)
