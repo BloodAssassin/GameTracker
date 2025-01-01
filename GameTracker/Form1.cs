@@ -19,7 +19,7 @@ namespace GameTracker
         public List<VideoGame> playedGames = new List<VideoGame>();
         public List<VideoGame> showedPlayedGames = new List<VideoGame>();
 
-        public string version = "v0.1.2";
+        public string version = "v0.1.3";
 
         bool isloading = true;
 
