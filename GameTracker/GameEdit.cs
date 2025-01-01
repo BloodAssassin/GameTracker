@@ -33,7 +33,7 @@ namespace GameTracker
             //Convert playtime to minutes
             numericUpDown2.Value = (int)Math.Round(game.playTime % 60, 0);
 
-            this.ActiveControl = ApplyButton;
+            this.ActiveControl = applyButton;
         }
 
         //Apply

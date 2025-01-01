@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameEdit));
             statusMessage = new Label();
             textBox1 = new TextBox();
-            ApplyButton = new Button();
-            button2 = new Button();
+            applyButton = new RoundedButton();
+            cancelButton = new RoundedButton();
             label1 = new Label();
             numericUpDown1 = new NumericUpDown();
             numericUpDown2 = new NumericUpDown();
@@ -67,35 +67,37 @@
             // 
             // ApplyButton
             // 
-            ApplyButton.BackColor = Color.FromArgb(68, 69, 96);
-            ApplyButton.Cursor = Cursors.Hand;
-            ApplyButton.FlatAppearance.BorderSize = 0;
-            ApplyButton.FlatStyle = FlatStyle.Flat;
-            ApplyButton.ForeColor = Color.FromArgb(224, 224, 224);
-            ApplyButton.Location = new Point(414, 185);
-            ApplyButton.Margin = new Padding(2);
-            ApplyButton.Name = "ApplyButton";
-            ApplyButton.Size = new Size(90, 32);
-            ApplyButton.TabIndex = 14;
-            ApplyButton.Text = "Apply";
-            ApplyButton.UseVisualStyleBackColor = false;
-            ApplyButton.Click += Apply_Click;
+            applyButton.BackColor = Color.FromArgb(68, 69, 96);
+            applyButton._defaultBackColor = Color.FromArgb(68, 69, 96);
+            applyButton.Cursor = Cursors.Hand;
+            applyButton.FlatAppearance.BorderSize = 0;
+            applyButton.FlatStyle = FlatStyle.Flat;
+            applyButton.ForeColor = Color.FromArgb(224, 224, 224);
+            applyButton.Location = new Point(414, 185);
+            applyButton.Margin = new Padding(2);
+            applyButton.Name = "ApplyButton";
+            applyButton.Size = new Size(90, 32);
+            applyButton.TabIndex = 14;
+            applyButton.Text = "Apply";
+            applyButton.UseVisualStyleBackColor = false;
+            applyButton.Click += Apply_Click;
             // 
             // button2
             // 
-            button2.BackColor = Color.FromArgb(68, 69, 96);
-            button2.Cursor = Cursors.Hand;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.ForeColor = Color.FromArgb(224, 224, 224);
-            button2.Location = new Point(312, 185);
-            button2.Margin = new Padding(2);
-            button2.Name = "button2";
-            button2.Size = new Size(90, 32);
-            button2.TabIndex = 15;
-            button2.Text = "Cancel";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += Cancel_Click;
+            cancelButton.BackColor = Color.FromArgb(68, 69, 96);
+            cancelButton._defaultBackColor = Color.FromArgb(68, 69, 96);
+            cancelButton.Cursor = Cursors.Hand;
+            cancelButton.FlatAppearance.BorderSize = 0;
+            cancelButton.FlatStyle = FlatStyle.Flat;
+            cancelButton.ForeColor = Color.FromArgb(224, 224, 224);
+            cancelButton.Location = new Point(312, 185);
+            cancelButton.Margin = new Padding(2);
+            cancelButton.Name = "button2";
+            cancelButton.Size = new Size(90, 32);
+            cancelButton.TabIndex = 15;
+            cancelButton.Text = "Cancel";
+            cancelButton.UseVisualStyleBackColor = false;
+            cancelButton.Click += Cancel_Click;
             // 
             // label1
             // 
@@ -167,8 +169,8 @@
             Controls.Add(numericUpDown2);
             Controls.Add(numericUpDown1);
             Controls.Add(label1);
-            Controls.Add(button2);
-            Controls.Add(ApplyButton);
+            Controls.Add(cancelButton);
+            Controls.Add(applyButton);
             Controls.Add(textBox1);
             Controls.Add(statusMessage);
             FormBorderStyle = FormBorderStyle.FixedDialog;
@@ -191,8 +193,8 @@
 
         private Label statusMessage;
         private TextBox textBox1;
-        private Button ApplyButton;
-        private Button button2;
+        private RoundedButton applyButton;
+        private RoundedButton cancelButton;
         private Label label1;
         private NumericUpDown numericUpDown1;
         private NumericUpDown numericUpDown2;

@@ -97,12 +97,12 @@ namespace GameTracker
             int i = 0;
             foreach (VideoGame game in showedPlayedGames)
             {
-                PictureBox newGameIcon = new PictureBox();
+                RoundedPictureBox newGameIcon = new RoundedPictureBox();
                 PictureBox newGamepad = new PictureBox();
                 Label newHours = new Label();
-                Button newEditButton = new Button();
-                Button newRemoveButton = new Button();
-                Panel newPanel = new Panel();
+                RoundedButton newRemoveButton = new RoundedButton();
+                RoundedButton newEditButton = new RoundedButton();
+                RoundedPanel newPanel = new RoundedPanel();
                 Label newGameName = new Label();
                 Label newPlayTime = new Label();
                 Label newStatusMessage = new Label();
@@ -119,7 +119,6 @@ namespace GameTracker
                 newGameIcon.SizeMode = PictureBoxSizeMode.CenterImage;
                 newGameIcon.TabIndex = 4;
                 newGameIcon.TabStop = false;
-                newGameIcon.Click += gameIcon_Click;
 
                 try
                 {
@@ -142,7 +141,7 @@ namespace GameTracker
                 // Edit Button
                 // 
                 newEditButton.BackColor = Color.FromArgb(68, 69, 96);
-                newEditButton.FlatAppearance.BorderSize = 0;
+                newEditButton._defaultBackColor = Color.FromArgb(68, 69, 96);
                 newEditButton.FlatStyle = FlatStyle.Flat;
                 newEditButton.ForeColor = Color.White;
                 newEditButton.Location = new Point(20, 294);
@@ -163,11 +162,12 @@ namespace GameTracker
                 // Remove Button
                 // 
                 newRemoveButton.BackColor = Color.FromArgb(68, 69, 96);
-                newRemoveButton.FlatAppearance.BorderSize = 0;
+                newRemoveButton.BackColor = Color.FromArgb(68, 69, 96);
+                newRemoveButton._defaultBackColor = Color.FromArgb(68, 69, 96);
                 newRemoveButton.FlatStyle = FlatStyle.Flat;
                 newRemoveButton.ForeColor = Color.White;
                 newRemoveButton.Location = new Point(20, 329);
-                newRemoveButton.Name = "newRemoveButton";
+                newRemoveButton.Name = "newRemoveButton" + i;
                 newRemoveButton.Size = new Size(94, 29);
                 newRemoveButton.TabIndex = 10;
                 newRemoveButton.Text = "Remove";
@@ -621,16 +621,6 @@ namespace GameTracker
             flowLayoutPanel1.AutoScroll = true;
         }
 
-        private void gameIcon_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
@@ -739,31 +729,6 @@ namespace GameTracker
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Resize(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

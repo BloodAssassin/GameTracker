@@ -31,7 +31,7 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             timer1 = new System.Windows.Forms.Timer(components);
-            button1 = new Button();
+            AddGameButton = new Button();
             timer2 = new System.Windows.Forms.Timer(components);
             notifyIcon1 = new NotifyIcon(components);
             contextMenuStrip1 = new ContextMenuStrip(components);
@@ -66,25 +66,25 @@
             timer1.Interval = 2000;
             timer1.Tick += timer1_Tick;
             // 
-            // button1
+            // AddGameButton
             // 
-            button1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button1.BackColor = Color.FromArgb(68, 69, 96);
-            button1.Cursor = Cursors.Hand;
-            button1.Dock = DockStyle.Right;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.FromArgb(224, 224, 224);
-            button1.Location = new Point(944, 0);
-            button1.Margin = new Padding(0);
-            button1.Name = "button1";
-            button1.Padding = new Padding(0, 0, 0, 2);
-            button1.Size = new Size(148, 51);
-            button1.TabIndex = 2;
-            button1.Text = "Add Game";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += AddGameClick;
+            AddGameButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            AddGameButton.BackColor = Color.FromArgb(68, 69, 96);
+            AddGameButton.Cursor = Cursors.Hand;
+            AddGameButton.Dock = DockStyle.Right;
+            AddGameButton.FlatAppearance.BorderSize = 0;
+            AddGameButton.FlatStyle = FlatStyle.Flat;
+            AddGameButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            AddGameButton.ForeColor = Color.FromArgb(224, 224, 224);
+            AddGameButton.Location = new Point(944, 0);
+            AddGameButton.Margin = new Padding(0);
+            AddGameButton.Name = "AddGameButton";
+            AddGameButton.Padding = new Padding(0, 0, 0, 2);
+            AddGameButton.Size = new Size(148, 51);
+            AddGameButton.TabIndex = 2;
+            AddGameButton.Text = "Add Game";
+            AddGameButton.UseVisualStyleBackColor = false;
+            AddGameButton.Click += AddGameClick;
             // 
             // timer2
             // 
@@ -136,7 +136,7 @@
             panel1.Controls.Add(OrderArrow);
             panel1.Controls.Add(sortDropDown);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(AddGameButton);
             panel1.Controls.Add(panel3);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 560);
@@ -144,7 +144,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1092, 51);
             panel1.TabIndex = 12;
-            panel1.Paint += panel1_Paint_1;
             // 
             // OrderArrow
             // 
@@ -205,8 +204,6 @@
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(1092, 560);
             flowLayoutPanel1.TabIndex = 11;
-            flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
-            flowLayoutPanel1.Resize += flowLayoutPanel1_Resize;
             // 
             // panel2
             // 
@@ -245,7 +242,6 @@
             gamepad.SizeMode = PictureBoxSizeMode.Zoom;
             gamepad.TabIndex = 10;
             gamepad.TabStop = false;
-            gamepad.Click += pictureBox1_Click;
             // 
             // button4
             // 
@@ -260,7 +256,6 @@
             button4.TabIndex = 10;
             button4.Text = "Remove";
             button4.UseVisualStyleBackColor = false;
-            button4.Click += button3_Click;
             // 
             // label4
             // 
@@ -283,7 +278,6 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox3.TabIndex = 4;
             pictureBox3.TabStop = false;
-            pictureBox3.Click += gameIcon_Click;
             // 
             // label5
             // 
@@ -309,7 +303,6 @@
             button5.TabIndex = 6;
             button5.Text = "Edit";
             button5.UseVisualStyleBackColor = false;
-            button5.Click += button2_Click;
             // 
             // label6
             // 
@@ -355,7 +348,7 @@
         #endregion
 
         private System.Windows.Forms.Timer timer1;
-        private Button button1;
+        private Button AddGameButton;
         private System.Windows.Forms.Timer timer2;
         private NotifyIcon notifyIcon1;
         private ContextMenuStrip contextMenuStrip1;
