@@ -15,6 +15,7 @@ Save files are located here: C:\Users\\\<USER\>\Documents\Game Tracker
 
 # Updates
 v0.1.2 - Sorting options are now saved
+v0.1.3 - Added rounded corners to buttons and panels
 
 # Requriements
 - Windows 10/11
