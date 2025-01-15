@@ -43,7 +43,6 @@
             panel3 = new Panel();
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel2 = new Panel();
-            label3 = new Label();
             gamepad = new PictureBox();
             button4 = new Button();
             label4 = new Label();
@@ -74,7 +73,7 @@
             AddGameButton.Dock = DockStyle.Right;
             AddGameButton.FlatAppearance.BorderSize = 0;
             AddGameButton.FlatStyle = FlatStyle.Flat;
-            AddGameButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            AddGameButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             AddGameButton.ForeColor = Color.FromArgb(224, 224, 224);
             AddGameButton.Location = new Point(944, 0);
             AddGameButton.Margin = new Padding(0);
@@ -165,6 +164,7 @@
             sortDropDown.Cursor = Cursors.Hand;
             sortDropDown.DropDownStyle = ComboBoxStyle.DropDownList;
             sortDropDown.FlatStyle = FlatStyle.Flat;
+            sortDropDown.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             sortDropDown.ForeColor = Color.FromArgb(224, 224, 224);
             sortDropDown.FormattingEnabled = true;
             sortDropDown.Location = new Point(77, 15);
@@ -177,10 +177,11 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label1.ForeColor = Color.FromArgb(224, 224, 224);
-            label1.Location = new Point(12, 18);
+            label1.Location = new Point(8, 18);
             label1.Name = "label1";
-            label1.Size = new Size(59, 20);
+            label1.Size = new Size(63, 20);
             label1.TabIndex = 4;
             label1.Text = "Sort by:";
             // 
@@ -208,7 +209,6 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(29, 38, 54);
-            panel2.Controls.Add(label3);
             panel2.Controls.Add(gamepad);
             panel2.Controls.Add(button4);
             panel2.Controls.Add(label4);
@@ -219,19 +219,8 @@
             panel2.Location = new Point(2, 2);
             panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(209, 401);
+            panel2.Size = new Size(209, 394);
             panel2.TabIndex = 9;
-            // 
-            // label3
-            // 
-            label3.ForeColor = Color.FromArgb(224, 224, 224);
-            label3.Location = new Point(20, 371);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(162, 20);
-            label3.TabIndex = 11;
-            label3.Text = "(status message)";
-            label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // gamepad
             // 
@@ -248,7 +237,8 @@
             button4.BackColor = Color.FromArgb(68, 69, 96);
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
-            button4.ForeColor = Color.White;
+            button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button4.ForeColor = Color.FromArgb(217, 230, 230);
             button4.Location = new Point(20, 329);
             button4.Margin = new Padding(2);
             button4.Name = "button4";
@@ -259,7 +249,8 @@
             // 
             // label4
             // 
-            label4.ForeColor = Color.FromArgb(224, 224, 224);
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label4.ForeColor = Color.FromArgb(199, 213, 214);
             label4.Location = new Point(20, 12);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
@@ -281,11 +272,12 @@
             // 
             // label5
             // 
-            label5.ForeColor = Color.FromArgb(224, 224, 224);
+            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label5.ForeColor = Color.FromArgb(232, 237, 238);
             label5.Location = new Point(49, 257);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(162, 20);
+            label5.Size = new Size(146, 20);
             label5.TabIndex = 5;
             label5.Text = "0h 0m";
             label5.TextAlign = ContentAlignment.MiddleLeft;
@@ -295,7 +287,8 @@
             button5.BackColor = Color.FromArgb(68, 69, 96);
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
-            button5.ForeColor = Color.White;
+            button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button5.ForeColor = Color.FromArgb(217, 230, 230);
             button5.Location = new Point(20, 294);
             button5.Margin = new Padding(2);
             button5.Name = "button5";
@@ -307,11 +300,12 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.ForeColor = Color.White;
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label6.ForeColor = Color.FromArgb(199, 213, 214);
             label6.Location = new Point(20, 225);
             label6.Margin = new Padding(0);
             label6.Name = "label6";
-            label6.Size = new Size(78, 20);
+            label6.Size = new Size(85, 20);
             label6.TabIndex = 0;
             label6.Text = "PLAY TIME";
             label6.TextAlign = ContentAlignment.MiddleLeft;
@@ -357,7 +351,6 @@
         private Panel panel3;
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel2;
-        private Label label3;
         private Button button4;
         private Label label4;
         private PictureBox pictureBox3;

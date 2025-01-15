@@ -19,7 +19,7 @@ namespace GameTracker
         public List<VideoGame> playedGames = new List<VideoGame>();
         public List<VideoGame> showedPlayedGames = new List<VideoGame>();
 
-        public string version = "v0.1.3";
+        public string version = "v0.1.4";
 
         bool isloading = true;
 
@@ -143,7 +143,8 @@ namespace GameTracker
                 newEditButton.BackColor = Color.FromArgb(68, 69, 96);
                 newEditButton._defaultBackColor = Color.FromArgb(68, 69, 96);
                 newEditButton.FlatStyle = FlatStyle.Flat;
-                newEditButton.ForeColor = Color.White;
+                newEditButton.ForeColor = Color.FromArgb(217, 230, 230);
+                newEditButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
                 newEditButton.Location = new Point(20, 294);
                 newEditButton.Name = "newEditButton" + i;
                 newEditButton.Size = new Size(94, 29);
@@ -165,7 +166,8 @@ namespace GameTracker
                 newRemoveButton.BackColor = Color.FromArgb(68, 69, 96);
                 newRemoveButton._defaultBackColor = Color.FromArgb(68, 69, 96);
                 newRemoveButton.FlatStyle = FlatStyle.Flat;
-                newRemoveButton.ForeColor = Color.White;
+                newRemoveButton.ForeColor = Color.FromArgb(217, 230, 230);
+                newRemoveButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
                 newRemoveButton.Location = new Point(20, 329);
                 newRemoveButton.Name = "newRemoveButton" + i;
                 newRemoveButton.Size = new Size(94, 29);
@@ -183,7 +185,8 @@ namespace GameTracker
                 // 
                 // Game Label
                 // 
-                newGameName.ForeColor = Color.FromArgb(224, 224, 224);
+                newGameName.ForeColor = Color.FromArgb(199, 213, 214);
+                newGameName.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
                 newGameName.Location = new Point(19, 13);
                 newGameName.Name = "newGameName" + i;
                 newGameName.Size = new Size(162, 20);
@@ -194,7 +197,8 @@ namespace GameTracker
                 // Play Time
                 // 
                 newPlayTime.AutoSize = true;
-                newPlayTime.ForeColor = Color.White;
+                newPlayTime.ForeColor = Color.FromArgb(199, 213, 214);
+                newPlayTime.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
                 newPlayTime.Location = new Point(20, 225);
                 newPlayTime.Margin = new Padding(0);
                 newPlayTime.Name = "newPlayTime" + i;
@@ -211,7 +215,8 @@ namespace GameTracker
                 double hours = Math.Floor(game.playTime / 60);
                 double minutes = Math.Round(game.playTime % 60, 0);
 
-                newHours.ForeColor = Color.FromArgb(224, 224, 224);
+                newHours.ForeColor = Color.FromArgb(232, 237, 238);
+                newHours.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
                 newHours.Location = new Point(20, 257);
                 newHours.Name = "newHours" + i;
                 newHours.Size = new Size(162, 20);
@@ -239,7 +244,8 @@ namespace GameTracker
                 // 
                 // statusMessage
                 // 
-                newStatusMessage.ForeColor = Color.FromArgb(224, 224, 224);
+                newStatusMessage.ForeColor = Color.FromArgb(199, 213, 214);
+                newStatusMessage.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
                 newStatusMessage.Location = new Point(20, 371);
                 newStatusMessage.Name = "statusMessage";
                 newStatusMessage.Size = new Size(162, 20);
@@ -440,8 +446,8 @@ namespace GameTracker
                     //Not currently playing
                     else if (game.isRunning == false)
                     {
-                        game.hoursLabel.ForeColor = Color.White;
-                        game.hoursLabel.Font = new Font(game.hoursLabel.Font, FontStyle.Regular);
+                        game.hoursLabel.ForeColor = Color.FromArgb(232, 237, 238);
+                        game.hoursLabel.Font = new Font(game.hoursLabel.Font, FontStyle.Bold);
                         game.hoursLabel.Location = new Point(20, 257);
 
                         game.gamepadIcon.Visible = false;
