@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\gametracker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|solutionrelative:gametracker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|c:\\users\\rmilo\\documents\\github\\gametracker\\gametracker\\gametracker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|solutionrelative:gametracker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|c:\\users\\rmilo\\documents\\github\\gametracker\\gametracker\\gametracker\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|solutionrelative:gametracker\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\gametracker\\gameedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|solutionrelative:gametracker\\gameedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\gametracker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|solutionrelative:gametracker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|c:\\users\\rmilo\\documents\\github\\gametracker\\gametracker\\gametracker\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|solutionrelative:gametracker\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|c:\\users\\rmilo\\documents\\github\\gametracker\\gametracker\\gametracker\\gameedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|solutionrelative:gametracker\\gameedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|c:\\users\\rmilo\\documents\\github\\gametracker\\gametracker\\gametracker\\modules\\videogame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|c:\\users\\rmilo\\documents\\github\\gametracker\\gametracker\\gametracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|solutionrelative:gametracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|c:\\users\\rmilo\\documents\\github\\gametracker\\gametracker\\gametracker\\gameedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|solutionrelative:gametracker\\gameedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F27CA975-4E1E-4BD0-A16A-74D6761DB8F5}|GameTracker\\GameTracker.csproj|c:\\users\\rmilo\\documents\\github\\gametracker\\gametracker\\gametracker\\customclasses\\roundedpicturebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,11 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\GameTracker\\Program.cs",
               "RelativeDocumentMoniker": "GameTracker\\Program.cs",
@@ -70,12 +70,11 @@
               "RelativeToolTip": "GameTracker\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T16:32:57.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-01T16:32:57.085Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "RoundedButton.cs",
               "DocumentMoniker": "C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\GameTracker\\CustomClasses\\RoundedButton.cs",
               "RelativeDocumentMoniker": "GameTracker\\CustomClasses\\RoundedButton.cs",
@@ -83,12 +82,11 @@
               "RelativeToolTip": "GameTracker\\CustomClasses\\RoundedButton.cs",
               "ViewState": "AgIAAFIAAAAAAAAAAAAwwBEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T15:07:43.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-01T15:07:43.018Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "VideoGame.cs",
               "DocumentMoniker": "C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\GameTracker\\Modules\\VideoGame.cs",
               "RelativeDocumentMoniker": "GameTracker\\Modules\\VideoGame.cs",
@@ -96,12 +94,11 @@
               "RelativeToolTip": "GameTracker\\Modules\\VideoGame.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAAwBQAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T14:22:03.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T14:22:03.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "GameEdit.cs",
               "DocumentMoniker": "C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\GameTracker\\GameEdit.cs",
               "RelativeDocumentMoniker": "GameTracker\\GameEdit.cs",
@@ -114,20 +111,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\GameTracker\\Form1.cs",
               "RelativeDocumentMoniker": "GameTracker\\Form1.cs",
               "ToolTip": "C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\GameTracker\\Form1.cs",
               "RelativeToolTip": "GameTracker\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAgwLUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-15T10:49:32.327Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "GameEdit.cs [Design]",
               "DocumentMoniker": "C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\GameTracker\\GameEdit.cs",
               "RelativeDocumentMoniker": "GameTracker\\GameEdit.cs",
@@ -139,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\GameTracker\\Form1.cs",
               "RelativeDocumentMoniker": "GameTracker\\Form1.cs",
@@ -151,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\rmilo\\Documents\\GitHub\\GameTracker\\GameTracker\\GameTracker\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "GameTracker\\Form1.Designer.cs",

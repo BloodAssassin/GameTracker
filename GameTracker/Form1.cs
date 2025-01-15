@@ -193,6 +193,7 @@ namespace GameTracker
                 newGameName.TabIndex = 9;
                 newGameName.Text = game.nickName;
                 newGameName.TextAlign = ContentAlignment.MiddleCenter;
+                newGameName.AutoEllipsis = true;
                 // 
                 // Play Time
                 // 

@@ -249,6 +249,8 @@
             // 
             // label4
             // 
+            label4.AutoEllipsis = true;
+            label4.FlatStyle = FlatStyle.Flat;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label4.ForeColor = Color.FromArgb(199, 213, 214);
             label4.Location = new Point(20, 12);
