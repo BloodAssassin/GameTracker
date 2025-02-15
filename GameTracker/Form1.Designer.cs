@@ -1,4 +1,7 @@
-﻿namespace GameTracker
+﻿//Custom Modules
+using GameTracker.Modules;
+
+namespace GameTracker
 {
     partial class Form1
     {
@@ -40,7 +43,6 @@
             OrderArrow = new PictureBox();
             sortDropDown = new ComboBox();
             label1 = new Label();
-            panel3 = new Panel();
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel2 = new Panel();
             gamepad = new PictureBox();
@@ -75,11 +77,11 @@
             AddGameButton.FlatStyle = FlatStyle.Flat;
             AddGameButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             AddGameButton.ForeColor = Color.FromArgb(224, 224, 224);
-            AddGameButton.Location = new Point(944, 0);
+            AddGameButton.Location = new Point(734, 0);
             AddGameButton.Margin = new Padding(0);
             AddGameButton.Name = "AddGameButton";
             AddGameButton.Padding = new Padding(0, 0, 0, 2);
-            AddGameButton.Size = new Size(148, 51);
+            AddGameButton.Size = new Size(148, 54);
             AddGameButton.TabIndex = 2;
             AddGameButton.Text = "Add Game";
             AddGameButton.UseVisualStyleBackColor = false;
@@ -136,21 +138,21 @@
             panel1.Controls.Add(sortDropDown);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(AddGameButton);
-            panel1.Controls.Add(panel3);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 560);
-            panel1.Margin = new Padding(2, 0, 2, 2);
+            panel1.Location = new Point(0, 498);
+            panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1092, 51);
+            panel1.Size = new Size(882, 54);
             panel1.TabIndex = 12;
             // 
             // OrderArrow
             // 
             OrderArrow.Cursor = Cursors.Hand;
             OrderArrow.Image = Properties.Resources.OrderArrow_Default;
-            OrderArrow.Location = new Point(217, 11);
+            OrderArrow.Location = new Point(218, 11);
+            OrderArrow.Margin = new Padding(2);
             OrderArrow.Name = "OrderArrow";
-            OrderArrow.Size = new Size(34, 33);
+            OrderArrow.Size = new Size(34, 32);
             OrderArrow.SizeMode = PictureBoxSizeMode.Zoom;
             OrderArrow.TabIndex = 6;
             OrderArrow.TabStop = false;
@@ -167,7 +169,8 @@
             sortDropDown.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             sortDropDown.ForeColor = Color.FromArgb(224, 224, 224);
             sortDropDown.FormattingEnabled = true;
-            sortDropDown.Location = new Point(77, 15);
+            sortDropDown.Location = new Point(78, 15);
+            sortDropDown.Margin = new Padding(2);
             sortDropDown.Name = "sortDropDown";
             sortDropDown.RightToLeft = RightToLeft.No;
             sortDropDown.Size = new Size(134, 28);
@@ -180,30 +183,25 @@
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label1.ForeColor = Color.FromArgb(224, 224, 224);
             label1.Location = new Point(8, 18);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(63, 20);
             label1.TabIndex = 4;
             label1.Text = "Sort by:";
             // 
-            // panel3
-            // 
-            panel3.Location = new Point(0, -482);
-            panel3.Margin = new Padding(2);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(882, 485);
-            panel3.TabIndex = 3;
-            // 
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.AutoSize = true;
             flowLayoutPanel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             flowLayoutPanel1.BackColor = Color.FromArgb(24, 32, 46);
             flowLayoutPanel1.Controls.Add(panel2);
             flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.Location = new Point(0, 0);
-            flowLayoutPanel1.Margin = new Padding(0, 0, 0, 8);
+            flowLayoutPanel1.Margin = new Padding(30);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(1092, 560);
+            flowLayoutPanel1.Padding = new Padding(2, 2, 20, 2);
+            flowLayoutPanel1.Size = new Size(882, 498);
             flowLayoutPanel1.TabIndex = 11;
             // 
             // panel2
@@ -216,7 +214,7 @@
             panel2.Controls.Add(label5);
             panel2.Controls.Add(button5);
             panel2.Controls.Add(label6);
-            panel2.Location = new Point(2, 2);
+            panel2.Location = new Point(4, 4);
             panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
             panel2.Size = new Size(209, 394);
@@ -226,6 +224,7 @@
             // 
             gamepad.Image = Properties.Resources.gamepad;
             gamepad.Location = new Point(19, 255);
+            gamepad.Margin = new Padding(2);
             gamepad.Name = "gamepad";
             gamepad.Size = new Size(32, 25);
             gamepad.SizeMode = PictureBoxSizeMode.Zoom;
@@ -276,7 +275,7 @@
             // 
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label5.ForeColor = Color.FromArgb(232, 237, 238);
-            label5.Location = new Point(49, 257);
+            label5.Location = new Point(49, 258);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
             label5.Size = new Size(146, 20);
@@ -317,13 +316,13 @@
             AutoScaleDimensions = new SizeF(120F, 120F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.FromArgb(24, 32, 46);
-            ClientSize = new Size(1092, 611);
+            ClientSize = new Size(882, 552);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panel1);
             DoubleBuffered = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(2);
-            MinimumSize = new Size(799, 498);
+            MinimumSize = new Size(798, 495);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Game Tracker";
@@ -339,6 +338,7 @@
             ((System.ComponentModel.ISupportInitialize)gamepad).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -350,7 +350,6 @@
         private ContextMenuStrip contextMenuStrip1;
         private ToolStripMenuItem quitToolStripMenuItem;
         private Panel panel1;
-        private Panel panel3;
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel2;
         private Button button4;

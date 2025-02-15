@@ -19,7 +19,7 @@ namespace GameTracker
         public List<VideoGame> playedGames = new List<VideoGame>();
         public List<VideoGame> showedPlayedGames = new List<VideoGame>();
 
-        public string version = "v0.1.4";
+        public string version = "v0.1.5";
 
         bool isloading = true;
 
@@ -29,13 +29,13 @@ namespace GameTracker
 
         //Sorting
         int sortIndex = 0;
-        string sortOrder = "asc";
+        enum sortType {ASC, DESC};
+        sortType sortOrder = sortType.ASC;
 
         public Form1()
         {
-            //Font scale
-            Font = new Font(Font.Name, 8.25f * 125f / CreateGraphics().DpiX, Font.Style, Font.Unit, Font.GdiCharSet, Font.GdiVerticalFont);
             InitializeComponent();
+            this.Size = new Size(1280, 720);
 
             //FlowLayout scroll
             this.DoubleBuffered = true;
@@ -102,7 +102,7 @@ namespace GameTracker
                 Label newHours = new Label();
                 RoundedButton newRemoveButton = new RoundedButton();
                 RoundedButton newEditButton = new RoundedButton();
-                RoundedPanel newPanel = new RoundedPanel();
+                Panel newPanel = new RoundedPanel();
                 Label newGameName = new Label();
                 Label newPlayTime = new Label();
                 Label newStatusMessage = new Label();
@@ -273,7 +273,7 @@ namespace GameTracker
                 newPanel.Location = new Point(3, 3);
                 newPanel.Name = "panel1";
                 newPanel.Size = new Size(209, 401);
-                newPanel.Margin = new System.Windows.Forms.Padding(2);
+                newPanel.Margin = new Padding(3);
                 newPanel.TabIndex = 9;
 
                 flowLayoutPanel1.Controls.Add(newPanel);
@@ -578,8 +578,8 @@ namespace GameTracker
         {
             string[] sorts = { "Added", "Playtime", "Alphabetical" };
 
-            //Default is set to 'asc' if it's 'desc' than flip the arrow
-            if (sortOrder == "desc")
+            //Default is set to 'ASC' if it's 'DESC' than flip the arrow
+            if (sortOrder == sortType.DESC)
             {
                 orderArrow_selected.RotateFlip(RotateFlipType.RotateNoneFlipY);
                 orderArrow_default.RotateFlip(RotateFlipType.RotateNoneFlipY);
@@ -616,7 +616,15 @@ namespace GameTracker
 
                 line = reader.ReadLine();
                 sortIndex = Convert.ToInt32(line.Split()[0]);
-                sortOrder = line.Split()[1];
+
+                if (line.Split()[1] == "asc")
+                {
+                    sortOrder = sortType.ASC;
+                }
+                else if (line.Split()[1] == "desc") 
+                { 
+                    sortOrder= sortType.DESC;
+                }    
 
                 reader.Close();
             }
@@ -648,12 +656,12 @@ namespace GameTracker
             //By added order
             if (sortDropDown.SelectedIndex == 0)
             {
-                if (sortOrder == "asc")
+                if (sortOrder == sortType.ASC)
                 {
                     showedPlayedGames.Clear();
                     showedPlayedGames = new List<VideoGame>(playedGames);
                 }
-                else if (sortOrder == "desc")
+                else if (sortOrder == sortType.DESC)
                 {
                     showedPlayedGames = new List<VideoGame>(playedGames);
                     showedPlayedGames.Reverse();
@@ -662,11 +670,11 @@ namespace GameTracker
             //By play time
             else if (sortDropDown.SelectedIndex == 1)
             {
-                if (sortOrder == "asc")
+                if (sortOrder == sortType.ASC)
                 {
                     showedPlayedGames = playedGames.OrderBy(x => x.playTime).ToList();
                 }
-                else if (sortOrder == "desc")
+                else if (sortOrder == sortType.DESC)
                 {
                     showedPlayedGames = playedGames.OrderByDescending(x => x.playTime).ToList();
                 }
@@ -674,11 +682,11 @@ namespace GameTracker
             //By alphabet
             else if (sortDropDown.SelectedIndex == 2)
             {
-                if (sortOrder == "asc")
+                if (sortOrder == sortType.ASC)
                 {
                     showedPlayedGames = playedGames.OrderBy(x => x.nickName).ToList();
                 }
-                else if (sortOrder == "desc")
+                else if (sortOrder == sortType.DESC)
                 {
                     showedPlayedGames = playedGames.OrderByDescending(x => x.nickName).ToList();
                 }
@@ -693,13 +701,13 @@ namespace GameTracker
 
             OrderArrow.Image = orderArrow_selected;
 
-            if (sortOrder == "asc")
+            if (sortOrder == sortType.ASC)
             {
-                sortOrder = "desc";
+                sortOrder = sortType.DESC;
             }
-            else if (sortOrder == "desc")
+            else if (sortOrder == sortType.DESC)
             {
-                sortOrder = "asc";
+                sortOrder = sortType.ASC;
             }
 
             SaveSorting();
